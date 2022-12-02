@@ -1,3 +1,10 @@
+#ifndef AOC2022_DAY1
+#define AOC2022_DAY1
+
+namespace aoc2022 {
+    void Day1();
+}
+
 const char* exampleInput = R"(
 1000
 2000
@@ -2274,3 +2281,5 @@ const char* input1 = R"(
 3253
 2123
 4825)";
+
+#endif
