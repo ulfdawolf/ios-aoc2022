@@ -30,6 +30,23 @@ std::vector<std::vector<int64_t>> ParseNumbersList(const char* rawInput) {
 
     return result;
 }
+
+std::vector<std::string> ParseStringsList(const char* rawInput) {
+    std::stringstream ss(rawInput);
+    std::string to;
+
+    std::vector<std::string> strings = {};
+
+    if (rawInput != NULL) {
+        while(std::getline(ss,to,'\n')) {
+            if (to != "") {
+                strings.push_back(to);
+            }
+        }
+    }
+
+    return strings;
+}
 };
 
 

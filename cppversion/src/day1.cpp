@@ -15,7 +15,7 @@ using namespace aoc2022_day1;
 namespace aoc2022_day1 {
 
 void Compute() {
-    cout << "---- Day 1: Calorie Counting ---" << endl;
+    cout << "--- Day 1: Calorie Counting ------" << endl;
     auto in = ParseNumbersList(input1);
     uint64_t max = 0;
     std::vector<int64_t> sums = {};

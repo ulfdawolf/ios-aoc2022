@@ -6,7 +6,8 @@
 
 namespace common
 {
-std::vector<std::vector<int64_t> > ParseNumbersList(const char* rawInput);
+std::vector<std::vector<int64_t>> ParseNumbersList(const char* rawInput);
+std::vector<std::string> ParseStringsList(const char* rawInput);
 };
 
 #endif // AOC2022_COMMON
