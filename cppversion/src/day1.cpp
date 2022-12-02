@@ -10,16 +10,17 @@
 
 using namespace std;
 using namespace common;
+using namespace aoc2022_day1;
 
-namespace aoc2022 {
+namespace aoc2022_day1 {
 
-void Day1()
-{
-    auto input = ParseNumbersList(input1);
+void Compute() {
+    cout << "---- Day 1: Calorie Counting ---" << endl;
+    auto in = ParseNumbersList(input1);
     uint64_t max = 0;
     std::vector<int64_t> sums = {};
 
-    for (const auto& numbers : input) {
+    for (const auto& numbers : in) {
         auto sum = std::accumulate(numbers.begin(), numbers.end(), (int64_t)0);
         sums.push_back(sum);
     }
@@ -27,12 +28,9 @@ void Day1()
     std::sort(sums.begin(), sums.end(), greater<int64_t>());
     auto top1 = sums[0];
     auto top3 = std::accumulate(sums.begin(), sums.begin()+3, (int64_t)0);
-    cout << "Top1 elf calories: " << top1 << endl;
-    cout << "Top3 elfes calories sum: " << top3 << endl;
+    cout << "Result1: Top1 elf calories: " << top1 << endl;
+    cout << "Result2: Top3 elfes calories sum: " << top3 << endl;
+    cout << "----------------------------------" << endl;
 }
 
 }
-
-
-
-
