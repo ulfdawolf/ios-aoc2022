@@ -1,15 +1,15 @@
-#ifndef AOC2022_DAY3
-#define AOC2022_DAY3
+#ifndef AOC2022_DAY4
+#define AOC2022_DAY4
 
-namespace aoc2022_day3 {
+namespace aoc2022_day4 {
     void Compute();
     static const char* exampleInput = R"(
-vJrwpWtwJgWrhcsFMMfFFhFp
-jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
-PmmdzqPrVvPwwTWBwg
-wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
-ttgJtRGJQctTZtZT
-CrZsJsPPZsGzwwsLwLmpwMDw)";
+2-4,6-8
+2-3,4-5
+5-7,7-9
+2-8,3-7
+6-6,4-6
+2-6,4-8)";
 
     static const char* input1 = R"(
 shzsFcPssFhjFssBzdpRcNHNZrpdJdJVJZ
@@ -315,4 +315,4 @@ RdPMPsmWHmjfMffPcCWrptcprpFTFrFp)";
 
 }
 
-#endif // AOC2022_DAY3
+#endif // AOC2022_DAY4

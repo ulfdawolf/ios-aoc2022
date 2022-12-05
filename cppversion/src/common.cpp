@@ -1,4 +1,5 @@
 #include <sstream>
+#include <regex>
 
 #include "common.h"
 
@@ -47,6 +48,24 @@ std::vector<std::string> ParseStringsList(const char* rawInput) {
 
     return strings;
 }
+
+std::vector<std::int64_t> ParseNumbersInString(const std::string numberString) {
+    std::vector<std::int64_t> numbers = {};
+    std::regex exp("[0-9]+");
+    std::smatch res;
+
+    auto str = numberString;
+
+    while (std::regex_search(str, res, exp)) {
+        auto num = res[0].first;
+        uint64_t number = strtoll(num, NULL, 10);
+        numbers.push_back(number);
+        str = res.suffix();
+    }
+
+    return numbers;
+}
+
 };
 
 
