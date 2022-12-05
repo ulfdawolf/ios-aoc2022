@@ -2512,4 +2512,4 @@ A Y)";
 
 }
 
-#endif // AOC2022_DAY1
+#endif // AOC2022_DAY2
