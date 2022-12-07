@@ -84,7 +84,7 @@ int64_t calculate2(std::string sack) {
     return score;
 }
 
-void Compute() {
+void Hohoho() {
     cout << "--- Day 3: Rucksack Reorganization ---" << endl;
     auto in = ParseStringsList(input1);
     uint64_t total1 = 0;

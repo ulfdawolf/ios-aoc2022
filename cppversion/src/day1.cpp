@@ -14,7 +14,7 @@ using namespace aoc2022_day1;
 
 namespace aoc2022_day1 {
 
-void Compute() {
+void Hohoho() {
     cout << "--- Day 1: Calorie Counting ------" << endl;
     auto in = ParseNumbersList(input1);
     uint64_t max = 0;

@@ -34,7 +34,7 @@ int64_t calculate2(std::string areas) {
     return 0;
 }
 
-void Compute() {
+void Hohoho() {
     cout << "--- Day 4: Camp Cleanup ---" << endl;
     auto in = ParseStringsList(input1);
     uint64_t total1 = 0;

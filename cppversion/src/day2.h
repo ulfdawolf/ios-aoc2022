@@ -2,7 +2,7 @@
 #define AOC2022_DAY2
 
 namespace aoc2022_day2 {
-    void Compute();
+    void Hohoho();
     static const char* exampleInput = R"(
 A Y
 B X

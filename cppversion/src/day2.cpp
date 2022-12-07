@@ -60,7 +60,7 @@ int64_t calculate2(std::string combat) {
     return score;
 }
 
-void Compute() {
+void Hohoho() {
     cout << "--- Day 2: Rock Paper Scissors ---" << endl;
     auto in = ParseStringsList(input1);
     uint64_t total1 = 0;

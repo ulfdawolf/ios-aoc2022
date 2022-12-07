@@ -77,7 +77,7 @@ std::string MoveCrates(bool model9001) {
     return result;
 }
 
-void Compute() {
+void Hohoho() {
     cout << "--- Day 5: Supply Stacks ---" << endl;
     std::string result1;
     std::string result2;

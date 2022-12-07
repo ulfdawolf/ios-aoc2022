@@ -3,7 +3,7 @@
 
 namespace aoc2022_day5 {
 
-void Compute();
+void Hohoho();
 static const char* exampleInput = R"(
     [D]    
 [N] [C]    
