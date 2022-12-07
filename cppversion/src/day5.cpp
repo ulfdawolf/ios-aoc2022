@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include <regex>
 
 #include "common.h"
 
@@ -33,7 +32,7 @@ void ParseStacks(std::string input) {
         }
 
         int index = 0;
-        for (auto &c : to) {
+        for (auto c : to) {
             if (c >= 'A' && c <= 'Z') {
                 int stack = (index - 1)/4;
                 while (stacks.size() <= stack) {
