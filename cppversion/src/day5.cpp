@@ -77,30 +77,6 @@ std::string MoveCrates(bool model9001) {
     return result;
 }
 
-
-
-int64_t calculate1(std::string areas) {    
-    const auto numbers = common::ParseNumbersInString(areas);
-    if ((numbers[0] >= numbers[2] && numbers[1] <= numbers[3]) ||
-        (numbers[2] >= numbers[0] && numbers[3] <= numbers[1])) {
-        return 1;
-    }
-
-    return 0;
-}
-
-int64_t calculate2(std::string areas) {
-    const auto numbers = common::ParseNumbersInString(areas);
-    if ((numbers[0] >= numbers[2] && numbers[0] <= numbers[3]) ||
-        (numbers[1] >= numbers[2] && numbers[1] <= numbers[3]) ||
-        (numbers[2] >= numbers[0] && numbers[2] <= numbers[1]) ||
-        (numbers[3] >= numbers[0] && numbers[3] <= numbers[1])) {
-        return 1;
-    }
-
-    return 0;
-}
-
 void Compute() {
     cout << "--- Day 5: Supply Stacks ---" << endl;
     std::string result1;
