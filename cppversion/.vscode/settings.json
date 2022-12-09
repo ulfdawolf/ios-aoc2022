@@ -67,6 +67,8 @@
         "set": "cpp",
         "unordered_set": "cpp",
         "regex": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "ranges": "cpp",
+        "span": "cpp"
     }
 }
