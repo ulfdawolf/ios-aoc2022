@@ -69,6 +69,8 @@
         "regex": "cpp",
         "deque": "cpp",
         "ranges": "cpp",
-        "span": "cpp"
+        "span": "cpp",
+        "charconv": "cpp",
+        "format": "cpp"
     }
 }

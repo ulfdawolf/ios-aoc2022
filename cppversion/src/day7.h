@@ -3,6 +3,7 @@
 
 #include <map>
 #include <string>
+#include <vector>
 
 namespace aoc2022_day7 {
 

@@ -5,6 +5,7 @@
 
 namespace common
 {
+
 std::vector<std::vector<int64_t>> ParseNumbersList(const char* rawInput) {
     std::stringstream ss(rawInput);
     std::string to;
@@ -47,6 +48,18 @@ std::vector<std::string> ParseStringsList(const char* rawInput) {
     }
 
     return strings;
+}
+
+void ParseDigitsToMatrix(const char* rawInput, std::vector<std::vector<int8_t>>& matrix) {
+    auto lines = ParseStringsList(rawInput);
+
+    for (const auto line : lines) {
+        std::vector<int8_t> x;
+        for (const auto c : line) {
+            x.push_back(static_cast<uint8_t>(c- '0'));
+        } 
+        matrix.push_back(x);
+    }
 }
 
 std::vector<std::int64_t> ParseNumbersInString(const std::string numbersString) {
