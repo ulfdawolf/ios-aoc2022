@@ -71,6 +71,7 @@
         "ranges": "cpp",
         "span": "cpp",
         "charconv": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "iomanip": "cpp"
     }
 }

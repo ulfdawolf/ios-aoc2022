@@ -7,6 +7,8 @@
 #include "day7.h"
 #include "day8.h"
 #include "day9.h"
+#include "day10.h"
+#include "day11.h"
 
 int main()
 {
@@ -19,4 +21,6 @@ int main()
     aoc2022_day7::Hohoho();
     aoc2022_day8::Hohoho();
     aoc2022_day9::Hohoho();
+    aoc2022_day10::Hohoho();
+    aoc2022_day11::Hohoho();
 }
