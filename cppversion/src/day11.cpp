@@ -156,14 +156,14 @@ int64_t Monkey::DoMonkeyBusiness(std::vector<std::string>& monkeySettingsLines, 
 }
 
 void Hohoho() {
-    cout << "--- Day 11:  ---" << endl;
+    cout << "--- Day 11: Monkey in the Middle ---" << endl;
     auto settings = common::ParseStringsList(input1);
     auto result1 = Monkey::DoMonkeyBusiness(settings, 20, 1);
     auto result2 = Monkey::DoMonkeyBusiness(settings, 10000, 2);
 
-    cout << "Result1: Tail visits: " << result1 << endl;
-    cout << "Result2: Tail visits: " << result2 << endl;
-    cout << "--------------------------" << endl;
+    cout << "Result1: Top Inspections Mult: " << result1 << endl;
+    cout << "Result2: Top Inspections Mult: " << result2 << endl;
+    cout << "------------------------------------" << endl;
 }
 
 }
